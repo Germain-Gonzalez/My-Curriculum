@@ -1,0 +1,64 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-container {
+  margin-bottom: 20px;
+}
+
+#videoPlayer {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#videoPlayer .vjs-big-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#nasaImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#nasaImages img {
+  margin: 10px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.search-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-button {
+  font-style: Arial;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #4f27ff;
+}

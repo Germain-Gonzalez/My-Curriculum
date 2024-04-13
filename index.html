@@ -6,9 +6,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>CV MARTIN SHEPARD</title>
+    <title>CV GERMAIN GONZALEZ</title>
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="search-container">
+        <input type="text" class="search-input" id="searchQuery" placeholder="Buscar imágenes..." onkeydown="handleKeyPress(event)">
+        <select id="imageCount">
+          <option value="3">3 imágenes</option>
+          <option value="5">5 imágenes</option>
+          <option value="10">10 imágenes</option>
+        </select>
+        <button class="search-button" onclick="fetchNASAImages()">Buscar</button>
+
+        <div id="nasaImages">
+                <!-- Las imágenes de la NASA se cargarán aquí -->
+          </div>
+         </div>
+      
+  <div class="container">
+    <h1>Reproductor de Videos</h1>
+
+    <div id="videoPlayer" class="video-container">
+      <video id="myVideo1.mp4" class="video-js" controls preload="auto" width="400" height="300">
+            <source src="videos/myVideo1.mp4" type="video/mp4">
+      </video>
+      <video id="myVideo2.mp4" class="video-js" controls preload="auto" width="400" height="300">
+            <source src="videos/myVideo2.mp4" type="video/mp4">
+      </video>
+      <video id="myVideo3.mp4" class="video-js" controls preload="auto" width="400" height="300">
+            <source src="videos/myVideo3.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  
+  <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
+  <script src="videoScript.js"></script>
+  <script src="nasaScript.js"></script>
     <!-- SECCION INICIO -->
     <section class="inicio" id="inicio">
         <div class="contenido-seccion">
